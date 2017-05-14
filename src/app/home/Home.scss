@@ -1,0 +1,15 @@
+.home-container {
+  .launching-button {
+    margin-top: 45vh;
+    border: none;
+    color: white;
+    width: 260px;
+    height: 74px;
+    font-weight: 700;
+    background-color: #00bfa5;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #03ddc0;
+    }
+  }
+}

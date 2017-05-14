@@ -1,0 +1,73 @@
+.questionnaire-container {
+  .close-button {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    margin: 5px;
+    color: #888889;
+    &:hover {
+      color: #283593;
+    }
+  }
+  .questionnaire-form {
+    margin-top: 150px;
+    background-color: white;
+    padding-top: 29px;
+    padding-bottom: 70px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .questionnaire-title {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #283593;
+  }
+  .required-field {
+    color: #e53935;
+  }
+  .margin-top {
+    margin-top: 20px;
+  }
+  .second-row {
+    margin-top: 15px;
+  }
+  .gender-checkbox {
+    margin-top: 0;
+  }
+  .sending-button {
+    margin-top: 25px;
+    background-color: #283593;
+    color: white;
+    height: 50px;
+    width: 150px;
+    &:hover {
+      background-color: #505bac;
+    }
+  }
+  .whisperer {
+    border: 1px solid #ccc;
+    option {
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+  .questionnaire-container .margin-top {
+    margin-top: 0;
+  }
+  .questionnaire-container .margin-top-xs {
+    margin-top: 20px;
+  }
+  .questionnaire-container .questionnaire-form {
+    margin-top: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+
