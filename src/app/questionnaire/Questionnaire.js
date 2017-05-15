@@ -11,7 +11,7 @@ class Questionnaire extends Component {
         this.defaultActivities = this.favoriteActivities.under18;
 
         this.state = {
-            firstname: '',
+            firstName: '',
             surname: '',
             gender: 'man',
             favoriteActivities: this.defaultActivities,
@@ -38,8 +38,8 @@ class Questionnaire extends Component {
                                         <label className="pull-left" htmlFor="name">Jméno <span
                                             className="required-field">*</span></label>
                                         <input type="text" id="name" className="form-control"
-                                               value={this.state.firstname}
-                                               onChange={this.handleSetFirstname.bind(this)}/>
+                                               value={this.state.firstName}
+                                               onChange={this.handleSetFirstName.bind(this)}/>
                                     </div>
                                 </div>
 
@@ -53,7 +53,6 @@ class Questionnaire extends Component {
                                     </div>
                                 </div>
                             </div>
-
                             <div className="row">
                                 <div
                                     className="col-xs-offset-2 col-xs-8 col-md-offset-2 col-md-4 margin-top margin-top-xs">
@@ -80,7 +79,6 @@ class Questionnaire extends Component {
                                     </div>
                                 </div>
                             </div>
-
                             <div className="row">
                                 <div className="col-md-offset-2 col-md-8 col-xs-offset-2 col-xs-8
                             text-left margin-top margin-top-xs">
@@ -97,8 +95,8 @@ class Questionnaire extends Component {
         );
     }
 
-    handleSetFirstname(event) {
-        this.setState({firstname: event.target.value});
+    handleSetFirstName(event) {
+        this.setState({firstName: event.target.value});
     }
 
     handleSetSurname(event) {
@@ -120,7 +118,7 @@ class Questionnaire extends Component {
 
     prepareAnswer() {
         return {
-            firstname: this.state.firstname,
+            firstName: this.state.firstName,
             surname: this.state.surname,
             activity: this.state.activity,
             gender: this.state.gender,
@@ -193,7 +191,7 @@ class Questionnaire extends Component {
     }
 
     isDisabled() {
-        return !this.state.firstname.length || !this.state.surname.length || !this.state.gender.length;
+        return !this.state.firstName.length || !this.state.surname.length || !this.state.gender.length;
     }
 
 }
