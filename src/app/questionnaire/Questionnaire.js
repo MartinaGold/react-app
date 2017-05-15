@@ -23,8 +23,8 @@ class Questionnaire extends Component {
 
     render() {
         return (
-            <div className="questionnaire-container">
-                <div>
+            <div className="questionnaire-container container-fluid">
+                <div className="row">
                     <div className="col-md-offset-2 col-md-8 container questionnaire-form">
                         <button className="pull-right close-button"
                                 onClick={this.props.handleChangeViewTo.bind(this, 'Home')}>
@@ -138,8 +138,6 @@ class Questionnaire extends Component {
                     </select>
                 </div>
             </div>
-
-
         );
     }
 
